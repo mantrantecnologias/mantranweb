@@ -3,6 +3,10 @@
     {
       "source": "/api/:path*",
       "destination": "http://api.mantran.eti.br:35390/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
