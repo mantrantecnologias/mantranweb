@@ -8,7 +8,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://api.mantran.et.br:35390',
+        target: 'http://api.mantran.eti.br:35390',
+        //target: 'https://localhost:7210',
         changeOrigin: true,
         secure: false, // necessário para HTTPS com certificado auto-assinado (localhost)
       },
